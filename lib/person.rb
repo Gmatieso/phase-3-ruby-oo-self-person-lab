@@ -31,6 +31,16 @@ class Person
     def happiness
         @happiness
     end
+
+    #setting our hygiene method 
+    def hygiene=(value)
+        @hygiene = value
+    end
+
+    #getting our hygiene method 
+    def hygiene
+        @hygiene 
+    end
     
 
   
@@ -41,11 +51,14 @@ human = Person.new("Wanjiku")
 
 puts human.name
 
-#calling our instance viable bank_account  currently initialized to 25
+#calling our instance variable  bank_account  currently setting it to a new value 
 puts human.bank_account=56
 
-#calling our instace variable happiness currently initialized  to 8
+#calling our instance variable happiness currently setting it to a new value 
 puts human.happiness = 46
+
+#calling our instance variable hygiene and setting it to a new value 
+puts human.hygiene = 21
 
 
 
