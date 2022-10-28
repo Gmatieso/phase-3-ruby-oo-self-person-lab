@@ -5,7 +5,7 @@ class Person
 
     def initialize(name)
         @name = name
-        @bank_account = 25
+        @bank_account = 25  #setting in a way instance variable cannot be assignged a new value and must not be initialzed when istance is created 
         @happiness = 8
         @hygiene = 8 
         
@@ -21,6 +21,18 @@ class Person
         @bank_account
     end
 
+    #setting our happiness method 
+    def happiness=(value)
+        @happiness = value   #setting it in such a way we can assign instance variable a new value 
+    end
+
+    #getting our happines method 
+
+    def happiness
+        @happiness
+    end
+    
+
   
 
 end
@@ -33,7 +45,7 @@ puts human.name
 puts human.bank_account=56
 
 #calling our instace variable happiness currently initialized  to 8
-# puts human.happiness
+puts human.happiness = 46
 
 
 
