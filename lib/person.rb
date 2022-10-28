@@ -65,6 +65,12 @@ class Person
     def happy?
         @happiness > 7 ? true : false 
     end
+    #defining getter method that takes an amount and adds it to the bank account 
+    def get_paid(amount)
+        @bank_account += amount
+         "all about the benjamins"
+    end
+
     
 
 end
@@ -88,6 +94,8 @@ puts human.clean?
 #calling out our happy method instance 
 puts human.happy?
 
+#calling out our get_paid method istance 
+puts human.get_paid(2000)
 
 
 
