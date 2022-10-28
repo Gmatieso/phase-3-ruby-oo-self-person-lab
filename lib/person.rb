@@ -56,13 +56,16 @@ class Person
         @hygiene 
     end
 
-    #defining our clean method 
+    #defining and getting our clean method 
     def clean
         @hygiene > 7 ? true : false 
     end
-    
 
-  
+    #defining getting our happy method 
+    def happy
+        @happiness > 7 ? true : false 
+    end
+    
 
 end
 #creating an instance of our class 
