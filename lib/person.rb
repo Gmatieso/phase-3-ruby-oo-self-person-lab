@@ -57,12 +57,12 @@ class Person
     end
 
     #defining and getting our clean method 
-    def clean
+    def clean?
         @hygiene > 7 ? true : false 
     end
 
     #defining getting our happy method 
-    def happy
+    def happy?
         @happiness > 7 ? true : false 
     end
     
@@ -82,8 +82,11 @@ puts human.happiness = 46
 #calling our instance variable hygiene and setting it to a new value 
 puts human.hygiene = 1
 
-#calling out our method instance 
-puts human.clean
+#calling out our clean  method instance 
+puts human.clean?
+
+#calling out our happy method instance 
+puts human.happy?
 
 
 
