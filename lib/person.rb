@@ -1,11 +1,13 @@
 # your code goes here
 class Person
     #using macros to define our instance variable 
-    attr_reader :name, :bank_account
+    attr_reader :name, :bank_account, :happiness, :hygiene
 
     def initialize(name)
         @name = name
         @bank_account = 25
+        @happiness = 8
+        @hygiene = 8 
         
     end
 
@@ -17,7 +19,11 @@ human = Person.new("Wanjiku")
 
 puts human.name
 
+#calling our instance viable bank_account  currently initialized to 25
 puts human.bank_account
+
+#calling our instace variable happiness currently initialized  to 8
+puts human.happiness
 
 
 
