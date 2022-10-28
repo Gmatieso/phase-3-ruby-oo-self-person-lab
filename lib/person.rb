@@ -23,7 +23,14 @@ class Person
 
     #setting our happiness method 
     def happiness=(value)
-        @happiness = value   #setting it in such a way we can assign instance variable a new value 
+        # condition to sets the value of the person's happiness points
+        @happiness = if value > 10
+            10
+        elsif value < 0
+            0
+        else 
+            num
+        end   
     end
 
     #getting our happines method 
