@@ -71,6 +71,13 @@ class Person
          "all about the benjamins"
     end
 
+    #increments the person's hygiene points by four and returns the string 
+    def take_bath
+        @hygiene += 4
+        "♪ Rub-a-dub just relaxing in the tub ♫"
+    end
+
+
     
 
 end
