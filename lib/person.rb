@@ -29,7 +29,7 @@ class Person
         elsif value < 0
             0
         else 
-            num
+            value
         end   
     end
 
@@ -41,7 +41,14 @@ class Person
 
     #setting our hygiene method 
     def hygiene=(value)
-        @hygiene = value
+        #condition to set the value of the person hygiene points 
+        @hygiene = if value > 10
+            10
+        elsif value < 0
+            0
+        else 
+            value
+        end
     end
 
     #getting our hygiene method 
