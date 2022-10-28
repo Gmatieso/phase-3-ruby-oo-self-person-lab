@@ -11,12 +11,12 @@ class Person
         
     end
 
-    #setting our bank_account 
+    #setting our bank_account method 
     def bank_account=(value)
         @bank_account = value
     end
 
-    #getting our bank_account 
+    #getting our bank_account method 
     def bank_account
         @bank_account
     end
