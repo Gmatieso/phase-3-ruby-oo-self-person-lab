@@ -5,6 +5,7 @@ class Person
 
     def initialize(name)
         @name = name
+        @bank_account = 25
         
     end
 
@@ -15,6 +16,8 @@ end
 human = Person.new("Wanjiku")
 
 puts human.name
+
+puts human.bank_account
 
 
 
