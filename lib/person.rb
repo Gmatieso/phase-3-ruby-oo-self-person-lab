@@ -55,6 +55,11 @@ class Person
     def hygiene
         @hygiene 
     end
+
+    #defining our clean method 
+    def clean
+        @hygiene > 7 ? true : false 
+    end
     
 
   
@@ -72,7 +77,10 @@ puts human.bank_account=56
 puts human.happiness = 46
 
 #calling our instance variable hygiene and setting it to a new value 
-puts human.hygiene = 21
+puts human.hygiene = 1
+
+#calling out our method instance 
+puts human.clean
 
 
 
