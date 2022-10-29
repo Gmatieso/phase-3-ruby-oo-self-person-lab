@@ -86,7 +86,7 @@ class Person
     #accepting another instance of the person class or "friend"
     def call_friend(friend)
         self.happiness += 3
-        self.happines += 3
+        friend.happiness += 3
         "Hi #{friend.name}! It's #{self.name}. How are you?"
     end
 
@@ -122,6 +122,8 @@ puts human.take_bath
 
 #calling out our non-attribute work_out method
 puts human.work_out
+#calling out our instance of the person class friend 
+# puts human.call_friend(friend)
 
 
 
