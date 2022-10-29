@@ -89,10 +89,17 @@ class Person
         friend.happiness += 3
         "Hi #{friend.name}! It's #{self.name}. How are you?"
     end
-
-
-    
-
+    def start_conversation(friend, topic)
+        if topic == "politics"
+         [self, friend].each {|person| person.happiness -= 2}
+         'blah blah partisan blah lobbyist'
+        elsif topic == "weather"
+         [self, friend].each {|person| person.happiness += 1}
+         'blah blah sun blah rain' 
+        else
+         'blah blah blah blah blah' 
+        end
+    end
 end
 #creating an instance of our class 
 human = Person.new("Wanjiku")
