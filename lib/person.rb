@@ -73,7 +73,7 @@ class Person
 
     #increments the person's hygiene points by four and returns the string 
     def take_bath
-        @hygiene += 4
+        self.hygiene += 4
         "♪ Rub-a-dub just relaxing in the tub ♫"
     end
 
@@ -101,8 +101,11 @@ puts human.clean?
 #calling out our happy method instance 
 puts human.happy?
 
-#calling out our get_paid method istance 
+#calling out our get_paid method instance 
 puts human.get_paid(2000)
+
+#calling out our take_bath method instance 
+puts human.take_bath
 
 
 
