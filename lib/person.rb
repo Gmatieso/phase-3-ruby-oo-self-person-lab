@@ -112,5 +112,9 @@ puts human.get_paid(2000)
 #calling out our take_bath method instance 
 puts human.take_bath
 
+#calling out our non-attribute work_out method
+puts human.work_out
+
+
 
 
