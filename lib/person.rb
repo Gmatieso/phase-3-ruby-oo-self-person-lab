@@ -83,6 +83,14 @@ class Person
         "♪ another one bites the dust ♫"
     end
 
+    #accepting another instance of the person class or "friend"
+    def call_friend(friend)
+        self.happiness += 3
+        self.happines += 3
+        "Hi #{friend.name}! It's #{self.name}. How are you?"
+    end
+
+
     
 
 end
