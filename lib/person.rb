@@ -76,7 +76,12 @@ class Person
         self.hygiene += 4
         "♪ Rub-a-dub just relaxing in the tub ♫"
     end
-
+    #increments the person's happiness by two points, decreases their hygiene by three points, and returns the Queen lyrics, "♪ another one bites the dust ♫
+    def work_out 
+        self.happiness += 2
+        self.hygiene -= 2
+        "♪ another one bites the dust ♫"
+    end
 
     
 
